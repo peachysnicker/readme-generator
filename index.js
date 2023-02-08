@@ -4,9 +4,9 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
-//description, installation instructions, usage information, contribution guidelines, and test instructions
+//D/description, D/installation instructions, D/usage information, D/contribution guidelines, and D/test instructions - video?
 //add badge license - notice is added to the section of the README entitled License that explains which license the application is covered under
-//github username with link - email with how to reach me
+//D/github username with link - D/email with how to reach me
 //table of contents with links
 const questions = [
     {
@@ -43,13 +43,37 @@ const questions = [
         type: "list",
         message: "What are the guidelines for contributing to this application?",
         choices: [
-            "Choice A: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
-            "Choice B: None",
+            "Option 1: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
+            "Option 2: None",
         ],
         default:
             "Choice A: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
         name: "contribute",
     },
+    {
+        type: "input",
+        message: "What tests have you done for your readme generator?",
+        name: "tests",
+    },
+    {
+        type: "input",
+        message: "Please enter your email address",
+        name: "email",
+    },
+    {
+        type: "input",
+        message: "Please enter your github username",
+        name: "github",
+    },
+    {
+        type: "list",
+        message: "Choose your license",
+        choices: [
+            "Option 1: Apache license 2.0",
+            "Option 2: GNU General Public License v3.0",
+            "Option 3: MIT",
+        ]
+    }
 ]
 // TODO: Create a function to initialize app
 //function init() { }
