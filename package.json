@@ -9,8 +9,16 @@
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.5"
   },
   "keywords": [],
-  "description": ""
+  "description": "module09-challenge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peachysnicker/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peachysnicker/readme-generator/issues"
+  },
+  "homepage": "https://github.com/peachysnicker/readme-generator#readme"
 }
