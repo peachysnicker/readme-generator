@@ -4,6 +4,10 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
+//description, installation instructions, usage information, contribution guidelines, and test instructions
+//add badge license - notice is added to the section of the README entitled License that explains which license the application is covered under
+//github username with link - email with how to reach me
+//table of contents with links
 const questions = [
     {
         type: "input",
@@ -17,25 +21,23 @@ const questions = [
     },
     {
         type: "input",
-        message: "What are the installation requirements/instructions?",
+        message: "What are the installation or instructions?",
         name: "installation",
     },
     {
         type: "input",
-        message: "What are the instructions and examples to use your project?",
+        message: "What is some usage information?",
         name: "usage",
     },
     {
         type: "list",
         message:
-            "List your collaborators, with links to their GitHub profiles.",
+            "List your contributors with links to their GitHub profiles.",
         choices: [
             "option 1: https://www.google.ca",
             "option 2: https://www.google.ca",
             "option 3: None",
         ],
-        default: "Choice A: https://github.com/coding-boot-camp/potential-enigma",
-        name: "credits",
     },
     {
         type: "list",
