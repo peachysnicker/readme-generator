@@ -69,9 +69,9 @@ const questions = [
         type: "list",
         message: "Choose your license",
         choices: [
-            "Option 1: MIT",
-            "Option 2: blah",
-            "Option 3: blah",
+            "Option 1: Apache license 2.0",
+            "Option 2: GNU General Public License v3.0",
+            "Option 3: MIT",
         ]
     }
 ]
