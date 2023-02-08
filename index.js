@@ -73,8 +73,46 @@ const questions = [
             "Option 2: GNU General Public License v3.0",
             "Option 3: MIT",
         ]
-    }
-]
+    },
+];
+
+inquirer
+    .prompt(questions)
+    //function to write read me file - create the file
+    .then((response) =>
+        fs.writeFile("readme.md",
+            `# ${response.title}
+
+##Description
+${response.description}
+
+### Table of Contents
+- one
+- two
+- three
+- four
+
+## Installation
+
+## Usage
+
+## Guideline Contributions to Follow
+
+## Tests
+
+## License Used
+
+## Badges
+
+## Contact me
+${response.github}
+${response.githubURL}
+${response.email}
+`,
+            (err) => (err ? console.log(err) : console.log("succes!!"))
+        ));
+
+
 // TODO: Create a function to initialize app
 //function init() { }
 
