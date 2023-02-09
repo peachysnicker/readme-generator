@@ -33,11 +33,11 @@ const questions = [
         type: "list",
         message: "What are the guidelines for contributing to this application?",
         choices: [
-            "Option 1: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
-            "Option 2: None",
+            "https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
+            "None",
         ],
         default:
-            "Choice A: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
+            "https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
         name: "guidelines",
     },
     {
