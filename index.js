@@ -1,13 +1,7 @@
-
-// TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 
-// TODO: Create an array of questions for user input
-//DONE/description, D/installation instructions, D/usage information, D/contribution guidelines, and D/test instructions - video?
-//add badge license - notice is added to the section of the README entitled License that explains which license the application is covered under
-//D/github username with link - D/email with how to reach me
-//D/table of contents with links
+
 const questions = [
     {
         type: "input",
@@ -44,15 +38,15 @@ const questions = [
         ],
         default:
             "Choice A: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
-        name: "contribute",
+        name: "guidelines",
     },
     {
         type: "list",
         message: "Choose your license",
         choices: [
-            "Option 1: Apache license 2.0",
-            "Option 2: GNU General Public License v3.0",
-            "Option 3: MIT",
+            "Apache license 2.0",
+            "GNU General Public License v3.0",
+            "MIT",
         ],
         default: "Option 3: MIT",
         name: "license",
@@ -97,14 +91,14 @@ inquirer
 ${response.badge}
 
 ### Table of Contents
-<a name="description" href="#description">Description</a>
-<a name="installation" href="#installation">Installation</a>
-<a name="usage" href="#usage">Usage</a>
-<a name="collaborators" href="#collaborators">Collaborators</a>
-<a name="guidelines" href="#guidelines">Guidelines</a>
-<a name="tests" href="#tests">Tests</a>
-<a name="license" href="#license">License</a>
-<a name="contact" href="#contact">Contact</a>
+-<a name="description" href="#description">Description</a>
+-<a name="installation" href="#installation">Installation</a>
+-<a name="usage" href="#usage">Usage</a>
+-<a name="collaborators" href="#collaborators">Collaborators</a>
+-<a name="guidelines" href="#guidelines">Guidelines</a>
+-<a name="tests" href="#tests">Tests</a>
+-<a name="license" href="#license">License</a>
+-<a name="contact" href="#contact">Contact</a>
 
 ## Description
 ${response.description}
@@ -130,6 +124,7 @@ ${response.license}
 
 
 ## Contact me
+With questions please do not hesitate to email or review my github profile.
 ${response.github}
 ${response.email}
 `,
@@ -137,8 +132,3 @@ ${response.email}
         ));
 
 
-// TODO: Create a function to initialize app
-//function init() { }
-
-// // Function call to initialize app
-//init();
