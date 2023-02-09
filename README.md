@@ -1,7 +1,7 @@
-# Mariah
+# this is the title
 
-##Description
-Mariah
+# Title
+this is the title
 
 ### Table of Contents
 - [Description] (#description) 
@@ -14,16 +14,16 @@ Mariah
 - [Contact] (#contact)
 
 ## Description <a name="description"></a>
-Mariah
+this is the description
 
 ## Installation <a name="installation"></a>
-Mariah
+this is how to install
 
 ## Usage <a name="usage"></a>
-Mariah
+link to video
 
 ## Collaborators <p name="installation"></p>
-Mariah
+none
 
 ## Guideline Contributions to Follow <p name="guidelines"></p>
 undefined
@@ -39,6 +39,6 @@ Option 3: MIT
 undefined
 
 ## Contact me
-Mariah
+github.com
 undefined
-Mariah
+my email@email.com
