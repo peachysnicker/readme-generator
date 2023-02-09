@@ -1,4 +1,4 @@
-# ReadMe Generator through Terminal
+# ReadMe Generator Through the Terminal
 ## License Badge
 MIT Badge: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -13,14 +13,16 @@ MIT Badge: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 -<a name="contact" href="#contact">Contact</a>
 
 ## Description
-This is the complete code files required on how to create a readme file through the terminal on your code editor.
+This is the complete code required to create a readme file solely through the terminal of your code editor.
 
 ## Installation 
-To complete this project fs-file system and inquirer are required to be installed and linked to your index.js file.
+FS node file system & npm Inquirer are required for this project.
 
 
 ## Usage 
-<iframe src="https://drive.google.com/file/d/1WGmV9XlhMZOMGOUGTjzgjcmnE5ncu3tI/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1WGmV9XlhMZOMGOUGTjzgjcmnE5ncu3tI/view" width="640" 
+height="480" allow="autoplay"></iframe>
+
 
 ## Collaborators
 n/a
@@ -29,7 +31,7 @@ n/a
 https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
 
 ## Tests 
-tests complete in node
+node
 
 ## License Used 
 MIT
