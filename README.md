@@ -4,41 +4,41 @@
 this is the title
 
 ### Table of Contents
-- [Description] (#description) 
-- [Installation] (#installation)
-- [usage] (#usage)
-- [Collaborators] (#collaborators)
-- [Guidelines] (#guidelines)
-- [Tests] (#test)
-- [Licence] (#license)
-- [Contact] (#contact)
+- <a name="description" href="#description">Description</a>
+- <a name="installation" href="#installation">Installation</a>
+- <a name="usage" href="#usage">Usage</a>
+- <a name="collaborators" href="#collaborators">Collaborators</a>
+- <a name="guidelines" href="#guidelines">Guidelines</a>
+- <a name="tests" href="#tests">Tests</a>
+- <a name="license" href="#license">License</a>
+- <a name="contact" href="#contact"></a>
 
-## Description <a name="description"></a>
-this is the description
+## Description
+my description
 
-## Installation <a name="installation"></a>
-this is how to install
+## Installation 
+install video link
 
-## Usage <a name="usage"></a>
-link to video
 
-## Collaborators <p name="installation"></p>
-none
+## Usage 
+how to use
 
-## Guideline Contributions to Follow <p name="guidelines"></p>
+## Collaborators
+my collabs
+
+## Guideline Contributions  
 undefined
 
-## Tests <p name="tests"></p>
+## Tests 
 
 
-## License Used <a name="license"></a>
+## License Used 
 Option 3: MIT
 
 ## Badges
-<a name="badges"></a>
 undefined
 
 ## Contact me
-github.com
+mygithub@github.com
 undefined
-my email@email.com
+myemail@gmail.com

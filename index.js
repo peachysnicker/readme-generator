@@ -85,38 +85,38 @@ inquirer
 ${response.title}
 
 ### Table of Contents
-- <a name="description">Description</a>
-- [Installation] (#installation)
-- [usage] (#usage)
-- [Collaborators] (#collaborators)
-- [Guidelines] (#guidelines)
-- [Tests] (#test)
-- [Licence] (#license)
-- [Contact] (#contact)
+- <a name="description" href="#description">Description</a>
+- <a name="installation" href="#installation">Installation</a>
+- <a name="usage" href="#usage">Usage</a>
+- <a name="collaborators" href="#collaborators">Collaborators</a>
+- <a name="guidelines" href="#guidelines">Guidelines</a>
+- <a name="tests" href="#tests">Tests</a>
+- <a name="license" href="#license">License</a>
+- <a name="contact" href="#contact"></a>
 
 ## Description
 ${response.description}
 
-## Installation <a name="installation"></a>
+## Installation 
 ${response.installation}
 
-## Usage <a name="usage"></a>
+
+## Usage 
 ${response.usage}
 
-## Collaborators <p name="installation"></p>
+## Collaborators
 ${response.collaborators}
 
-## Guideline Contributions to Follow <p name="guidelines"></p>
+## Guideline Contributions  
 ${response.guidelines}
 
-## Tests <p name="tests"></p>
+## Tests 
 ${response.tests}
 
-## License Used <a name="license"></a>
+## License Used 
 ${response.license}
 
 ## Badges
-<a name="badges"></a>
 ${response.badge}
 
 ## Contact me
