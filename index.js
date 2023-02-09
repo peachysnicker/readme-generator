@@ -38,6 +38,8 @@ const questions = [
             "option 2: https://www.google.ca",
             "option 3: None",
         ],
+        default: "option 1: https://www.google.ca",
+        name: "contributor"
     },
     {
         type: "list",
@@ -72,7 +74,9 @@ const questions = [
             "Option 1: Apache license 2.0",
             "Option 2: GNU General Public License v3.0",
             "Option 3: MIT",
-        ]
+        ],
+        default: "Option 3: MIT",
+        name: "license",
     },
 ];
 
