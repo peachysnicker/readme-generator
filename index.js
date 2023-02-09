@@ -93,6 +93,7 @@ inquirer
     .then((response) =>
         fs.writeFile("readme.md",
             `# ${response.title}
+            ${response.badge}
 
 ### Table of Contents
 - <a name="description" href="#description">Description</a>
@@ -102,7 +103,6 @@ inquirer
 - <a name="guidelines" href="#guidelines">Guidelines</a>
 - <a name="tests" href="#tests">Tests</a>
 - <a name="license" href="#license">License</a>
-- <a name="badge" href="#badge">badge</a>
 - <a name="contact" href="#contact"></a>
 
 ## Description
@@ -127,8 +127,6 @@ ${response.tests}
 ## License Used 
 ${response.license}
 
-## Badges
-${response.badge}
 
 ## Contact me
 ${response.github}
