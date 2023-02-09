@@ -108,8 +108,7 @@ ${response.installation}
 
 
 ## Usage 
-<iframe src="${response.usage}" width="640" 
-height="480" allow="autoplay"></iframe>
+${response.usage}
 
 
 ## Collaborators
