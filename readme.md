@@ -1,7 +1,4 @@
-# this is the title
-
-# Title
-this is the title
+# this is my title
 
 ### Table of Contents
 - <a name="description" href="#description">Description</a>
@@ -11,34 +8,34 @@ this is the title
 - <a name="guidelines" href="#guidelines">Guidelines</a>
 - <a name="tests" href="#tests">Tests</a>
 - <a name="license" href="#license">License</a>
+- <a name="badge" href="#badge">badge</a>
 - <a name="contact" href="#contact"></a>
 
 ## Description
 my description
 
 ## Installation 
-install video link
+install with this
 
 
 ## Usage 
-how to use
+use this
 
 ## Collaborators
-my collabs
+collabs with
 
 ## Guideline Contributions  
 undefined
 
 ## Tests 
-
+node tests
 
 ## License Used 
 Option 3: MIT
 
 ## Badges
-undefined
+MIT Badge: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contact me
-mygithub@github.com
-undefined
-myemail@gmail.com
+github.com
+email@email.com

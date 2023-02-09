@@ -7,7 +7,7 @@ const inquirer = require("inquirer");
 //DONE/description, D/installation instructions, D/usage information, D/contribution guidelines, and D/test instructions - video?
 //add badge license - notice is added to the section of the README entitled License that explains which license the application is covered under
 //D/github username with link - D/email with how to reach me
-//table of contents with links
+//D/table of contents with links
 const questions = [
     {
         type: "input",
@@ -47,6 +47,29 @@ const questions = [
         name: "contribute",
     },
     {
+        type: "list",
+        message: "Choose your license",
+        choices: [
+            "Option 1: Apache license 2.0",
+            "Option 2: GNU General Public License v3.0",
+            "Option 3: MIT",
+        ],
+        default: "Option 3: MIT",
+        name: "license",
+    },
+    {
+        type: "list",
+        message: "Choose your status badge in accordance to your license",
+        choices: [
+            "APACHE Badge: [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+            "GENERAL Badge: [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
+            "MIT Badge: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+        ],
+        default: "MIT Badge: ",
+        name: "badge",
+
+    },
+    {
         type: "input",
         message: "What tests have you done for your readme generator?",
         name: "tests",
@@ -61,17 +84,7 @@ const questions = [
         message: "Please enter your personal github link",
         name: "github",
     },
-    {
-        type: "list",
-        message: "Choose your license",
-        choices: [
-            "Option 1: Apache license 2.0",
-            "Option 2: GNU General Public License v3.0",
-            "Option 3: MIT",
-        ],
-        default: "Option 3: MIT",
-        name: "license",
-    },
+
 ];
 
 inquirer
@@ -81,9 +94,6 @@ inquirer
         fs.writeFile("readme.md",
             `# ${response.title}
 
-# Title
-${response.title}
-
 ### Table of Contents
 - <a name="description" href="#description">Description</a>
 - <a name="installation" href="#installation">Installation</a>
@@ -92,6 +102,7 @@ ${response.title}
 - <a name="guidelines" href="#guidelines">Guidelines</a>
 - <a name="tests" href="#tests">Tests</a>
 - <a name="license" href="#license">License</a>
+- <a name="badge" href="#badge">badge</a>
 - <a name="contact" href="#contact"></a>
 
 ## Description
@@ -121,7 +132,6 @@ ${response.badge}
 
 ## Contact me
 ${response.github}
-${response.githubURL}
 ${response.email}
 `,
             (err) => (err ? console.log(err) : console.log("succes!!"))
