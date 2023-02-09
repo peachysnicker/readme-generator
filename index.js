@@ -4,7 +4,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
-//D/description, D/installation instructions, D/usage information, D/contribution guidelines, and D/test instructions - video?
+//DONE/description, D/installation instructions, D/usage information, D/contribution guidelines, and D/test instructions - video?
 //add badge license - notice is added to the section of the README entitled License that explains which license the application is covered under
 //D/github username with link - D/email with how to reach me
 //table of contents with links
@@ -30,16 +30,10 @@ const questions = [
         name: "usage",
     },
     {
-        type: "list",
+        type: "input",
         message:
-            "List your contributors with links to their GitHub profiles.",
-        choices: [
-            "option 1: https://www.google.ca",
-            "option 2: https://www.google.ca",
-            "option 3: None",
-        ],
-        default: "option 1: https://www.google.ca",
-        name: "contributor"
+            "List your collaborators with links to their GitHub profiles.",
+        name: "collaborators"
     },
     {
         type: "list",
@@ -64,7 +58,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Please enter your github username",
+        message: "Please enter your personal github link",
         name: "github",
     },
     {
@@ -87,26 +81,43 @@ inquirer
         fs.writeFile("readme.md",
             `# ${response.title}
 
-##Description
-${response.description}
+# Title
+${response.title}
 
 ### Table of Contents
-- one
-- two
-- three
-- four
+- [Description] (#description) 
+- [Installation] (#installation)
+- [usage] (#usage)
+- [Collaborators] (#collaborators)
+- [Guidelines] (#guidelines)
+- [Tests] (#test)
+- [Licence] (#license)
+- [Contact] (#contact)
 
-## Installation
+## Description <a name="description"></a>
+${response.description}
 
-## Usage
+## Installation <a name="installation"></a>
+${response.installation}
 
-## Guideline Contributions to Follow
+## Usage <a name="usage"></a>
+${response.usage}
 
-## Tests
+## Collaborators <p name="installation"></p>
+${response.collaborators}
 
-## License Used
+## Guideline Contributions to Follow <p name="guidelines"></p>
+${response.guidelines}
+
+## Tests <p name="tests"></p>
+${response.tests}
+
+## License Used <a name="license"></a>
+${response.license}
 
 ## Badges
+<a name="badges"></a>
+${response.badge}
 
 ## Contact me
 ${response.github}
