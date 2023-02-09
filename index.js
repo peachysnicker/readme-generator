@@ -85,7 +85,7 @@ inquirer
 ${response.title}
 
 ### Table of Contents
-- [Description] (#description) 
+- <a name="description">Description</a>
 - [Installation] (#installation)
 - [usage] (#usage)
 - [Collaborators] (#collaborators)
@@ -94,7 +94,7 @@ ${response.title}
 - [Licence] (#license)
 - [Contact] (#contact)
 
-## Description <a name="description"></a>
+## Description
 ${response.description}
 
 ## Installation <a name="installation"></a>
